@@ -5,7 +5,7 @@ Home: https://hg-git.github.io/
 
 Package license: GPLv2
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Push to and pull from a Git repository using Mercurial
 
