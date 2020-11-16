@@ -3,13 +3,15 @@ About hg-git
 
 Home: https://hg-git.github.io/
 
-Package license: GPLv2
+Package license: GPL-2.0-or-later
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/hg-git-feedstock/blob/master/LICENSE.txt)
 
 Summary: Push to and pull from a Git repository using Mercurial
 
+Development: https://dev.heptapod.net/mercurial/hg-git/
 
+Documentation: https://hg-git.github.io/
 
 Current build status
 ====================
