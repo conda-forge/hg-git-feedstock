@@ -1,5 +1,5 @@
 {% set name = "hg-git" %}
-{% set version = "0.9.0" %}
+{% set version = "0.10.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 77acbd8c322847ec109046d931e0731a91fcf13e10cfe9c183812706ec867671
+  sha256: 190e9682d830731be956ae5f7ce01cabda5cf3d4180e15d6d64b832a952e6b8a
 
 build:
-  number: 1
+  number: 0
   noarch: python
-  script: 'pip install . --no-deps --ignore-installed -vv'
+  script: pip install . --no-deps --ignore-installed -vv
 
 requirements:
   host:
