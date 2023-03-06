@@ -1,11 +1,11 @@
-About hg-git
-============
+About hg-git-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/hg-git-feedstock/blob/main/LICENSE.txt)
 
 Home: https://hg-git.github.io/
 
 Package license: GPL-2.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/hg-git-feedstock/blob/main/LICENSE.txt)
 
 Summary: Push to and pull from a Git repository using Mercurial
 
