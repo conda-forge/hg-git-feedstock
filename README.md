@@ -3,15 +3,15 @@ About hg-git-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/hg-git-feedstock/blob/main/LICENSE.txt)
 
-Home: https://hg-git.github.io/
+Home: https://wiki.mercurial-scm.org/HgGit
 
 Package license: GPL-2.0-or-later
 
 Summary: Push to and pull from a Git repository using Mercurial
 
-Development: https://dev.heptapod.net/mercurial/hg-git/
+Development: https://foss.heptapod.net/mercurial/hg-git/
 
-Documentation: https://hg-git.github.io/
+Documentation: https://wiki.mercurial-scm.org/HgGit
 
 Current build status
 ====================
