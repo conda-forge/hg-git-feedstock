@@ -1,5 +1,5 @@
 {% set name = "hg-git" %}
-{% set version = "1.0.4" %}
+{% set version = "1.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 3f5c4762a48ddd81670807b94f8cfe2d963ee7f827384bbef26adaacc6c3c869
+  sha256: af4e10eb36edf153358d892818e74966a28f3f15f2e230b55f577d9c9f9f1166
 
 build:
   number: 0
@@ -16,27 +16,31 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.9
     - pip
+    - setuptools
+    - setuptools-scm
   run:
-    - python >=3.6
+    - python >=3.9
     - mercurial
-    - dulwich >=0.19.0
+    - dulwich >=0.21.6,<0.23.0
 
 test:
   imports:
     - hggit
   commands:
+    - hg version -v
+    - hg debuginstall
     - hg help -e hggit --config "extensions.hggit="
 
 about:
-  home: https://hg-git.github.io/
+  home: https://wiki.mercurial-scm.org/HgGit
   license: GPL-2.0-or-later
   license_family: GPL2
   license_file: COPYING
   summary: Push to and pull from a Git repository using Mercurial
-  doc_url: https://hg-git.github.io/
-  dev_url: https://dev.heptapod.net/mercurial/hg-git/
+  doc_url: https://wiki.mercurial-scm.org/HgGit
+  dev_url: https://foss.heptapod.net/mercurial/hg-git/
 
 extra:
   recipe-maintainers:
